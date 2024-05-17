@@ -3,6 +3,9 @@
 use App\classes\Category;
 use App\classes\Post;
 use App\classes\UserLogin;
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 ?>
 <div class="row state-overview">
     <div class="col-lg-3 col-sm-6">

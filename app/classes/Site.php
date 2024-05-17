@@ -66,6 +66,18 @@ class Site
             return false;
         }
     }
+
+    public static function useSecretApi(){
+
+        $id = 1; 
+        $sql = "SELECT * FROM secret_urls WHERE id = $id";
+        $result = mysqli_query(Database::db(),$sql);
+        if($result){
+            return $result;
+        }else{
+            return false;
+        }
+    }
     public  static  function updateSocialLink($data){
         $fb = $data['fb'];
         $tw = $data['tw'];

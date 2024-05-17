@@ -1,6 +1,6 @@
 <?php
 require_once 'vendor/autoload.php';
-require_once 'app/classes/post.php';
+require_once 'app/classes/Post.php';
 
 
 use App\classes\Post;
@@ -110,11 +110,14 @@ if ($page == 'login.php') {
                             <h3>databundleHub</h3>
                             <p>Get the best data bundle plan for your internet needs</p>
                             <p> <span class="text-white">
-                            <span class="text-white">
-                                </span> Click!! Here To
-                                    <a class="link-bundle" href="databundle.php">
+                            Click!! Here To
+                                    <a class="link-bundle px-2" href="databundle.php">
                                         Buy Now
+                                    </a>
+                                    <a class="link-agent px-2" href="#">
+                                        Super Agent Registration
                                     </a> </span>
+                                 </span>
                             </p>
 
 

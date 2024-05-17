@@ -1,5 +1,10 @@
 <?php
 require_once '../vendor/autoload.php';
+require_once '../app/classes/Post.php';
+require_once '../app/classes/category.php';
+require_once '../app/classes/UserLogin.php';
+require_once '../app/classes/Mail.php';
+
 use App\classes\Session;
 Session::init();
 //USER INSERT

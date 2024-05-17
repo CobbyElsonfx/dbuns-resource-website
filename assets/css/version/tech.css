@@ -1,11 +1,4 @@
-/**************************************
 
-    File Name: tech.css
-    Template Name: Tech Blog
-    Created By: HTML.Design
-    http://themeforest.net/user/wpdestek
-
-**************************************/
 
 body {
     background-color: #ffffff;
@@ -23,7 +16,12 @@ body,
 .dropdown-item,
 .form-control,
 p {
-    font-family: 'Poppins', serif !important;
+    font-family: "Open Sans", sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #f0dede !important;
 }
 
 h1,
@@ -210,7 +208,7 @@ h5 {
 }
 
 .footer a {
-    color: #999999 !important;
+    color: #fdf8f8 !important;
 }
 
 .footer .link-widget li {
@@ -249,28 +247,21 @@ h5 {
 }
 
 .bg-orange {
-    background-color: #FF6347 !important;
+    background-color: #def5f8 !important;
 }
 
 .page-title .bg-orange,
 .masonry-box:hover .blog-meta span.bg-orange,
 .color-orange a {
-    background-color: #FF6347 !important;
+    background-color: #f0f1f1 !important;
 }
 
 .footer a:hover,
 .footer .fa:hover,
 .footer .fa:focus {
-    color: #0091e5 !important;
+    color: #fafafa !important;
 }
 
-.authorbox p a,
-.pp a,
-.blog-top .fa-rss,
-a:hover,
-a:focus {
-    color: #FF6347 !important;
-}
 
 .btn,
 .page-link:hover,

@@ -179,3 +179,65 @@
 			</div>
 		</div>
 	</section>
+	IMPORTANT NOTICE
+
+OUR MTN DATA REQUEST DOESN'T supports the following
+
+Merchant SIM
+EVD SIM
+Turbonet SIMS
+Broadband SIMS
+Blacklisted SIM
+Other Network
+Wrong Number
+Any data transferred to the above SIMs gets burned and can not be reversed.
+
+Thank you.
+
+	<!-- <div class="mb-2">
+						<label for="last_four_digits" classs="form-label">Last Four Digits of Transaction ID:</label>
+						<input type="text" id="last_four_digits" placeholder="1234" maxlength="4"
+							name="last_four_digits" class="form-control custom-input" pattern="[0-9]{4}"
+							title="Please enter exactly 4 digits" required>
+						<small class="">Enter last Four (4) digit of the transaction ID from momo receipt</small>
+
+					</div> -->
+					
+	<script>
+
+const scriptURL = '<?= $api['url'] ?>';
+const form = document.forms['form'];
+
+form.addEventListener('submit', e => {
+	e.preventDefault();
+	// Disable the submit button and show loading spinner
+	const submitButton = form.querySelector('button[type="submit"]');
+	submitButton.disabled = true;
+	submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Submitting...';
+	console.log(scriptURL, "secret")
+
+	fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+		.then(response => {
+			// Enable the submit button
+			submitButton.disabled = false;
+			submitButton.innerHTML = 'Submit';
+			if (response.ok) {
+				// If the response is successful, show success message and reload page
+				alert("Thank you! Order submitted successfully.");
+				form.reset();
+			} else {
+				// If there's an error, show error message
+				throw new Error('Network response was not ok');
+			}
+		})
+		.catch(error => {
+			// Enable the submit button
+			submitButton.disabled = false;
+			submitButton.innerHTML = 'Submit';
+			console.error('Error!', error.message, error);
+			alert("An error occurred while submitting the form. Please try again later.");
+		});
+});
+
+
+</script>

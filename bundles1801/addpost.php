@@ -1,5 +1,9 @@
 <?php require_once 'header.php' ?>
 <?php
+require_once '../app/classes/Post.php';
+require_once '../app/classes/category.php';
+require_once '../app/classes/UserLogin.php';
+require_once '../app/classes/Mail.php';
 use App\classes\Category;
 $allCat = Category::activeCategories();
 ?>
@@ -37,7 +41,7 @@ $allCat = Category::activeCategories();
                                 <b>Content</b>
                             </div>
                             <div class="col-sm-9">
-                                <textarea name="content" id="" cols="30" rows="10" class="summernote">
+                                <textarea name="content" id="" cols="" rows="" class="summernote">
                                 </textarea>
                             </div>
                         </div>

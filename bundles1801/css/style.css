@@ -97,7 +97,7 @@ a, a:hover, a:focus {
     color: #fff;
     text-transform: uppercase;
     font-weight: 300;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     box-shadow: 0 4px #e56b60;
     margin-bottom: 20px;
 }
@@ -3525,7 +3525,7 @@ table.sliders tr td {
     background: transparent;
     border: none;
     color: #34495e;
-    font-family: "Lato", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     margin: 0px;
     padding: 0 0 0 5px;
@@ -3553,7 +3553,7 @@ table.sliders tr td {
 .tagsinput-remove-link:before {
     color: #ffffff;
     content: "\f00d";
-    font-family: "FontAwesome";
+    font-family: "Open Sans", sans-serif;
 }
 .tagsinput-add-container {
     vertical-align: middle;
@@ -3582,7 +3582,7 @@ table.sliders tr td {
 }
 .tagsinput-add:before {
     content: "\f067";
-    font-family: "FontAwesome";
+    font-family: "Open Sans", sans-serif;
 }
 .tags_clear {
     clear: both;
@@ -4256,13 +4256,7 @@ span.customSelect.changed {
     direction: rtl;
     font-size: 30px;
 }
-.rating span.star,
-.rating span.star {
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    display: inline-block;
-}
+
 .rating span.star:hover,
 .rating span.star:hover {
     cursor: pointer;
