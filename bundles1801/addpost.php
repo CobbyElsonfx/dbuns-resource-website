@@ -15,7 +15,6 @@ $allCat = Category::activeCategories();
                     <span style="font-weight: bold"><?= isset($_SESSION['extError']) ? $_SESSION['extError'] : ''?></span>
                     <span style="font-weight: bold"><?= isset($_SESSION['postInsert']) ? $_SESSION['postInsert'] : ''?></span>
                      <span style="font-weight: bold"><?= isset($_SESSION['txt']) ? $_SESSION['txt'] : ''?></span>
-                </header>
                 <div class="card-body">
                     <form action="insert.php" method="post" enctype="multipart/form-data">
                         <div class="form-group row">
@@ -41,7 +40,7 @@ $allCat = Category::activeCategories();
                                 <b>Content</b>
                             </div>
                             <div class="col-sm-9">
-                                <textarea name="content" id="" cols="" rows="" class="summernote">
+                                <textarea name="content" id="" cols="30" rows="10" class="summernote">
                                 </textarea>
                             </div>
                         </div>

@@ -22,7 +22,6 @@
 body {
     font-size: 15px;
     line-height: 26px;
-    background-color: #ffffff;
 }
 
 h1,
@@ -1906,23 +1905,7 @@ hr.invis3 {
     border-radius: 50%
 }
 
-.carousel-item {
-    text-align: center;
-    padding: 20px;
-}
-.carousel-item .card {
-    background-color: #007bff;
-    color: white;
-    border: none;
-}
-.carousel-item .card .card-body {
-    padding: 40px 20px;
-}
-.carousel-item .card .card-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-.carousel-item .card .card-text {
+ .card .card-text {
     font-size: 18px;
 }
 
@@ -2096,3 +2079,204 @@ hr.invis3 {
       transform: translateX(0);
     }
   }
+
+
+  /* Our packages */
+
+
+  .packages-header {
+    position: relative;
+    display: inline-block;
+}
+
+.packages-header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 60%;
+    height: 4px;
+    background-color: var(--sea-blue); /* Change the color as needed */
+}
+
+
+  .gigcards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gigcard {
+    width: 190px;
+    padding: 20px;
+    height: 154px;
+    border-radius: 30px;
+    background: radial-gradient(circle, rgb(149, 174, 243) 0%, rgba(255,255,255,1) 100%);
+    box-shadow: 10px 15px 30px #bebebe, -10px -10px 30px #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.gigcard:hover {
+    transform: scale(1.05);
+}
+
+.package-size {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.size {
+    display: inline-block;
+}
+
+.subscript {
+    display: inline-block;
+    font-size: 1rem;
+    vertical-align:middle;
+}
+
+.amount {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .gigcard {
+        width: 140px;
+        padding: 15px;
+        height: 130px;
+    }
+
+    .package-size {
+        font-size: 1.5rem;
+    }
+
+    .amount {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gigcard {
+        width: 120px;
+        padding: 10px;
+        height: 110px;
+    }
+
+    .package-size {
+        font-size: 2.5rem;
+    }
+
+    .amount {
+        font-size: 0.9rem;
+    }
+}
+
+  
+
+
+.carousel {
+	margin: 30px auto;
+	padding: 0 70px;
+}
+.carousel .carousel-item {
+	min-height: 300px;
+	text-align: center;
+	overflow: hidden;
+}
+
+
+
+.carousel .carousel-item .btn {
+	color: #333;
+	border-radius: 0;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: none;
+	border: 1px solid #ccc;
+	padding: 3px 8px;
+	margin-top: 15px;
+	line-height: 16px;
+}
+
+.carousel .carousel-item .btn i {
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.carousel .thumb-wrapper {
+	text-align: center;
+}
+.carousel .thumb-content {
+	padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-control-prev, .carousel-control-next {
+	height: 100px;
+	width: 40px;
+	background: none;
+	margin: auto 0;
+	background: rgba(255, 255, 255, 0.2);
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	margin: -16px 0 0 0;
+	z-index: 5;
+	left: 0;
+	right: 0;
+	color: rgba(0, 0, 0, 0.8);
+	text-shadow: none;
+	font-weight: bold;
+}
+.carousel-control-prev i {
+	margin-left: -3px;
+}
+.carousel-control-next i {
+	margin-right: -3px;
+}
+.carousel .item-price {
+	font-size: 13px;
+	padding: 2px 0;
+}
+.carousel .item-price strike {
+	color: #999;
+	margin-right: 5px;
+}
+.carousel .item-price span {
+	color: #86bd57;
+	font-size: 110%;
+}	
+.carousel .carousel-indicators {
+	bottom: -50px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 4px;
+	border-radius: 50%;
+	border-color: transparent;
+	border: none;
+}
+.carousel-indicators li {	
+	background: rgba(0, 0, 0, 0.2);
+}
+.carousel-indicators li.active {	
+	background: rgba(0, 0, 0, 0.6);
+}

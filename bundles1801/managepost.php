@@ -28,6 +28,7 @@
                         </thead>
                         <?php
                         require_once '../vendor/autoload.php';
+                        
                         $allCat = new \App\classes\Post();
                         $data = $allCat->showAllPost();
                         $i=0;

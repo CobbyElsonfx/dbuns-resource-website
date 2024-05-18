@@ -40,7 +40,8 @@ if ($page == 'login.php') {
     <meta name="keywords" content="data bundles, affordable data, mobile data, internet data, data plans, data sellers, Ghana data bundles">
 <meta name="description" content="Get affordable data bundles from dataBundleshub, your trusted data seller in Ghana. We offer a range of mobile data plans to suit your needs.">
 <meta name="author" content="dataBundleshub">
-
+<!--  summernote -->
+<link href="assets/summernote/dist/summernote.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
 
     <link href="css/bootstrap.min.css" rel="stylesheet">

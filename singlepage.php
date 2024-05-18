@@ -58,7 +58,7 @@ if(isset($_GET['id'])){
 </div>
 
 <?php require_once 'sidebar.php'; ?>
-<div class="container">
+<div class="container mb-4">
     <h3>Related Post</h3>
     <div class="row">
         <?php

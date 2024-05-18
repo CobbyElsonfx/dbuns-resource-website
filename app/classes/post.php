@@ -10,35 +10,39 @@ use App\classes\Helper;
 
 class Post
 {
-    public  function addPost($data){
-        $cat_id = $data['cat_id'];
-        $title = $data['title'];
-        $title = Helper::filter("$title");
-        $content = $data['content'];
-        $tag = $data['tag'];
-        $content = Helper::filter("$content");
-        $status = $data['status'];
-        $admin = Session::get('username');
-        $image = $_FILES['image']['name'];
-        $img_ext = pathinfo($_FILES['image']['name'],PATHINFO_EXTENSION);
-        $image = rand(1,888888). '.' .$img_ext;
-        $ext =  $this->imageChecker($img_ext);
-        if($ext == false){
-            Session::set('extError',"Image should be png");
-            header('location:addpost.php');
-        }
-        $sql = "INSERT INTO `blog` (`cat_id`, `title`, `content`,`tag`, `admin`, `status`, `image`) VALUES ('$cat_id','$title','$content','$tag','$admin','$status','$image')";
-        $result = mysqli_query(Database::db(),$sql);
-        if($result){
-            $upload = '../uploads/' . $image;
-            move_uploaded_file($_FILES['image']['tmp_name'],$upload);
-            $txt = "Post added successfully!";
-            return $txt;
-        }else{
-            $txt = "Post Not Save :)";
-            return $txt;
-        }
+    public function addPost($data){
+    $cat_id = $data['cat_id'];
+    $title = mysqli_real_escape_string(Database::db(), $data['title']);
+    $title = Helper::filter($title);
+    $content = mysqli_real_escape_string(Database::db(), $data['content']);
+    $tag = mysqli_real_escape_string(Database::db(), $data['tag']);
+    $status = mysqli_real_escape_string(Database::db(), $data['status']);
+    $admin = mysqli_real_escape_string(Database::db(), Session::get('username'));
+    
+    $image = $_FILES['image']['name'];
+    $img_ext = pathinfo($image, PATHINFO_EXTENSION);
+    $image = rand(1, 888888) . '.' . $img_ext;
+    $ext = $this->imageChecker($img_ext);
+    if ($ext == false) {
+        Session::set('extError', "Image should be png");
+        header('location:addpost.php');
+        exit();
     }
+
+    $sql = "INSERT INTO `blog` (`cat_id`, `title`, `content`, `tag`, `admin`, `status`, `image`) VALUES ('$cat_id', '$title', '$content', '$tag', '$admin', '$status', '$image')";
+    $result = mysqli_query(Database::db(), $sql);
+
+    if ($result) {
+        $upload = '../uploads/' . $image;
+        move_uploaded_file($_FILES['image']['tmp_name'], $upload);
+        $txt = "Post added successfully!";
+    } else {
+        $txt = "Post Not Saved :)";
+    }
+
+    return $txt;
+}
+
     public  static  function imageChecker($ext){
         if($ext == 'jpg' || $ext == 'jpeg' || $ext == 'png' || $ext == 'PNG' || $ext == 'JPG' || $ext == 'JPEG'){
             return true;

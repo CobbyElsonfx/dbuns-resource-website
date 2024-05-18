@@ -1,12 +1,16 @@
 <?php
 require_once '../vendor/autoload.php';
 require_once '../app/classes/Post.php';
-require_once '../app/classes/category.php';
+require_once '../app/classes/Category.php';
 require_once '../app/classes/UserLogin.php';
 require_once '../app/classes/Mail.php';
 
 use App\classes\Session;
 Session::init();
+// Enable error reporting for debugging
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 //USER INSERT
 if(isset($_POST['cat-btn'])){
     $userOb = new \App\classes\Category();

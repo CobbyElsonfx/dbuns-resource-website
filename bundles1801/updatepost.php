@@ -1,6 +1,13 @@
 <?php require_once 'header.php' ?>
 <?php
 require_once '../vendor/autoload.php';
+require_once '../vendor/autoload.php';
+require_once '../app/classes/Post.php';
+require_once '../app/classes/Category.php';
+require_once '../app/classes/UserLogin.php';
+require_once '../app/classes/Mail.php';
+require_once '../app/classes/Session.php';
+
 use App\classes\Category;
 $allCat = Category::activeCategories();
 if(isset($_GET['updatepost'])){

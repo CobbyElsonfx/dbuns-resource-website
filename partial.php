@@ -9,7 +9,7 @@
 
 </div> 
 <section class="services">
-    <div class="container">
+    <div class="container">,
         <h2 class="section-title">Our Services</h2>
         <div class="row">
             <!-- Service items -->

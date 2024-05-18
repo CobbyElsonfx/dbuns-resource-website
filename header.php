@@ -28,13 +28,14 @@ elseif ($page == 'contact.php'){
 
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
 
     <!-- Site Metas -->
     <title><?= $title . ' | ' . $siteData['title']?></title>
     <meta name="keywords" content="data bundles, affordable data, mobile data, internet data, data plans, data sellers, Ghana data bundles">
 <meta name="description" content="Get affordable data bundles from dataBundleshub, your trusted data seller in Ghana. We offer a range of mobile data plans to suit your needs.">
 <meta name="author" content="dataBundleshub">
+
+<meta name="google-adsense-account" content="ca-pub-1983131452016590">
 
 
 

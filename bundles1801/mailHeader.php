@@ -10,8 +10,8 @@ use App\classes\Mail;
                 <img src="img/mail-avatar.jpg" alt="">
             </a>
             <div class="user-name">
-                <h5><a href="#">Jonathan Smith</a></h5>
-                <span><a href="#">jsmith@gmail.com</a></span>
+                <h5><a href="#">Andoh Francis</a></h5>
+                <span><a href="#">andohfrancis9187@gmail.com</a></span>
             </div>
             <a href="javascript:;" class="mail-dropdown float-right">
                 <i class="fa fa-chevron-down"></i>
