@@ -44,7 +44,7 @@ if(isset($_GET['id'])){
 
         <div class="blog-content">
             <div class="pp">
-                <?= $postData['content'] ?>t?
+                <?= $postData['content'] ?>
             </div><!-- end pp -->
         </div><!-- end content -->
 

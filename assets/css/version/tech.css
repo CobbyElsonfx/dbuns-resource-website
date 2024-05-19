@@ -20,10 +20,7 @@ p {
     font-family: "Open Sans", sans-serif;
 }
 
-a:hover {
-    text-decoration: none;
-    color: #f0dede !important;
-}
+
 
 h1,
 h2,
@@ -33,6 +30,9 @@ h5 {
     font-weight: 600;
 }
 
+label {
+    color:#030011 !important;
+}
 .navbar-inverse .navbar-nav .nav-link,
 .navbar-nav .nav-link {
     color: #ffffff !important;
@@ -140,7 +140,7 @@ h5 {
 .blog-meta small a,
 .blog-meta small {
     font-weight: 500;
-    color: #999 !important;
+    color:#9b9aa5 !important;
 }
 
 .fa-star {
@@ -248,13 +248,13 @@ h5 {
 }
 
 .bg-orange {
-    background-color: #def5f8 !important;
+    background-color: #00a9e5!important;
 }
 
 .page-title .bg-orange,
 .masonry-box:hover .blog-meta span.bg-orange,
 .color-orange a {
-    background-color: #f0f1f1 !important;
+    background-color: #00aae5!important;
 }
 
 .footer a:hover,

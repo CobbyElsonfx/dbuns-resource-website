@@ -103,7 +103,26 @@ p {
 
 a {
     text-decoration: none !important;
+    color:#007bff;
 }
+
+a:hover {
+    color: #fefeff !important;
+}
+a:hover > span  {
+    color: #dde4eb !important;
+}
+
+
+a:focus {
+color: #0056b3 !important;
+}
+
+.blog-title  {
+    color: #111111 !important;
+}
+
+
 
 .blockquote {
     border: 1px solid #edeff2;
@@ -224,6 +243,10 @@ a {
   .link-bundle:hover {
     color: #f1f0f5 !important;
   }
+  .link-agent:hover {
+    color: #f1f0f5 !important;
+  }
+  
   
   .link-bundle {
     display: inline-block;
@@ -275,11 +298,10 @@ a {
     }
 
     .link-bundle:hover {
-        color: #ffffff;
+        color: #ffffff !important;
       }
 
       .header-welcome .link-bundle {
-        font-weight: bold;
         text-decoration: none;
         transition: color 0.3s ease-in-out;
       }
@@ -299,9 +321,56 @@ a {
         font-size: large !important;
         padding: 5px 10px;
       }
+
+      .link-bundle:hover {
+        color: #e5e3eb !important;
+        animation: ease-in-out 0.3s;
+      }
+      .link-agent:hover {
+        color: #f1f0f5 !important;
+        animation: ease-in-out 0.3s;
+      }
   }
   
+  .important-notice {
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    border-left: 5px solid #d9534f;
+    padding: 15px 20px;
+    margin: 20px 0;
+    position: relative;
+}
 
+/* mobile  */
+@media only screen and (max-width: 768px) {
+    .important-notice {
+        font-size: 0.8rem;
+        padding: 10px 15px;
+    }
+}   
+.important-notice b {
+    color: #d9534f;
+}
+
+.important-notice::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #d9534f;
+    border-radius: 50%;
+    animation: blink 1.5s infinite;
+    position: absolute;
+    top: 3px;
+    right: -1px;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
 
 
 
@@ -2084,12 +2153,12 @@ hr.invis3 {
   /* Our packages */
 
 
-  .packages-header {
+  .section-header {
     position: relative;
     display: inline-block;
 }
 
-.packages-header::after {
+.section-header::after {
     content: "";
     position: absolute;
     left: 0;
@@ -2145,7 +2214,6 @@ hr.invis3 {
 }
 
 .amount {
-    margin-top: 10px;
     font-size: 1.4rem;
     color: #ffffff;
 }
@@ -2279,4 +2347,12 @@ hr.invis3 {
 }
 .carousel-indicators li.active {	
 	background: rgba(0, 0, 0, 0.6);
+}
+
+.category {
+   
+    color: white !important;
+ 
+   
+  
 }

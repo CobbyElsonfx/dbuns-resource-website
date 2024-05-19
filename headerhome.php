@@ -109,16 +109,18 @@ if ($page == 'login.php') {
                             <p class="welcometo">Welcome to </p>
                             <h3>databundleHub</h3>
                             <p>Get the best data bundle plan for your internet needs</p>
-                            <p> <span class="text-white">
-                            Click!! Here To
-                                    <a class="link-bundle px-2" href="databundle.php">
-                                        Buy Now
+                            <div class="text-white"> 
+                           <a class="link-bundle px-2" href="databundle.php">
+                                      Buy Now
+                                    
                                     </a>
                                     <a class="link-agent px-2" href="#">
-                                        Super Agent Registration
-                                    </a> </span>
-                                 </span>
-                            </p>
+                                     Reg. as Agent
+                                     
+                                        
+                                    </a> 
+                               
+                            </div>
 
 
 

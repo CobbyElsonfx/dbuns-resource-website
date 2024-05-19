@@ -8,6 +8,21 @@ $api = mysqli_fetch_assoc($secretApi);
 ?>
 <div>
     <div class="container">
+        <marquee behavior="scroll" direction="left" class="marquee">
+            <h4 class="marquee-text"><span class="text-">IMPORTANT NOTICE :</span> 
+
+Our data request service does not support the followin
+
+Merchant SIM,
+EVD SIM,
+Turbonet SIMS,
+Broadband SIMS,
+Blacklisted SIM,
+Other Network,
+Wrong Number,
+Please note that any data transferred to the above SIMs will be lost and cannot be reversed.
+data request service does not support the followin</h4>
+        </marquee>
         <div class="row">
             <!-- Image Column (hidden on small screens) -->
             <div class="col-lg-6 d-none d-lg-block">
@@ -15,8 +30,9 @@ $api = mysqli_fetch_assoc($secretApi);
             </div>
             <!-- Form Column -->
             <div class="col-lg-6">
-                <h2>Affordable Internet Bundles</h2>
-                <h5>Please ensure that payment is made before completing the form.</h5>
+                <h2 class="">Affordable Internet Bundles</h2>
+               <h5 class="important-notice"> Please make every effort to complete the payment to the Vodafone number <b>+233 20 057 4070</b> immediately after filling out the form. Use the provided reference in your payment to expedite your data request.</h5>
+
                 <form class="" action="" method="POST" name="form">
                     <div class="mb-2">
                         <label for="momo_name" class="form-label">MOMO Name</label>
@@ -67,13 +83,12 @@ $api = mysqli_fetch_assoc($secretApi);
                                 <label for="amount_paid" class="form-label">Amount Paid (GHC):</label>
                                 <input type="text" id="amount_paid" name="amount_paid" class="form-control custom-input"
                                     readonly>
-                                <small><b>Note:</b> Please confirm if the amount paid is as shown above before
-                                    submission</small>
+                                
                             </div>
                         </div>
                     </div>
 
-                    <button type="submit" class="custom-button rounded-3">Submit</button>
+                    <button type="submit" class="custom-button mt-4 rounded-3">Submit</button>
                 </form>
             </div>
         </div>
@@ -83,7 +98,7 @@ $api = mysqli_fetch_assoc($secretApi);
             <div class="container ">
                 <div class="row ">
                     <div class="col-md-12 m-auto">
-                        <h2 class="packages-header">Our <b class="text-dark">Packages</b></h2>
+                        <h2 class="section-header">Our <b class="text-dark">Packages</b></h2>
                         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
                             <!-- Carousel indicators -->
                             <ol class="carousel-indicators">
@@ -411,7 +426,7 @@ $api = mysqli_fetch_assoc($secretApi);
                         document.execCommand('copy');
                         document.body.removeChild(copyText);
 
-                        alert("Thank you! Order submitted successfully. Reference: " + reference + " (copied to clipboard)");
+                        alert("Thank you! Order submitted successfully. Your Reference is: " + reference);
                         form.reset();
                         document.getElementById('package_mb').value = ''; // Clear the package_mb field
                     } else {
@@ -426,27 +441,7 @@ $api = mysqli_fetch_assoc($secretApi);
                 });
         });
     </script>
-    <script>
-        const packages = [
-            { size: '5', unit: 'gig', amount: '$20' },
-            { size: '10', unit: 'gig', amount: '$35' },
-            // Add more packages as needed
-        ];
 
-        const container = document.getElementById('card-container');
-
-        packages.forEach(pkg => {
-            const card = document.createElement('div');
-            card.classList.add('gigcard');
-
-            card.innerHTML = `
-                <div class="package-size"><span class="size">${pkg.size}</span><span class="subscript">${pkg.unit}</span></div>
-                <div class="amount">${pkg.amount}</div>
-            `;
-
-            container.appendChild(card);
-        });
-    </script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
