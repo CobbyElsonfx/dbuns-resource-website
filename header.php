@@ -59,8 +59,9 @@ elseif ($page == 'contact.php'){
     <link href="assets/css/version/tech.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Macondo&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Macondo&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -83,6 +84,9 @@ elseif ($page == 'contact.php'){
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" href="">Super Agent Reg. </a>
+                        </li>
+                        <li class="nav-item d-none">
+                            <a class="nav-link " href="news.php">News</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.php">About Us </a>

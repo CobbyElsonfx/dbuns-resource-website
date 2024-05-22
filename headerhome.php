@@ -33,9 +33,11 @@ if ($page == 'login.php') {
 
     <!-- Site Metas -->
     <title><?= $title . ' | ' . $siteData['title'] ?></title>
-    <meta name="keywords" content="data bundles, affordable data, mobile data, internet data, data plans, data sellers, Ghana data bundles">
-<meta name="description" content="Get affordable data bundles from dataBundleshub, your trusted data seller in Ghana. We offer a range of mobile data plans to suit your needs.">
-<meta name="author" content="dataBundleshub">
+    <meta name="keywords"
+        content="data bundles, affordable data, mobile data, internet data, data plans, data sellers, Ghana data bundles">
+    <meta name="description"
+        content="Get affordable data bundles from dataBundleshub, your trusted data seller in Ghana. We offer a range of mobile data plans to suit your needs.">
+    <meta name="author" content="dataBundleshub">
 
 
 
@@ -56,6 +58,10 @@ if ($page == 'login.php') {
 
     <!-- Version Tech CSS for this template -->
     <link href="assets/css/version/tech.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Macondo&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
 
 </head>
 
@@ -109,31 +115,20 @@ if ($page == 'login.php') {
                             <p class="welcometo">Welcome to </p>
                             <h3>databundleHub</h3>
                             <p>Get the best data bundle plan for your internet needs</p>
-                            <div class="text-white"> 
-                           <a class="link-bundle px-2" href="databundle.php">
-                                      Buy Now
-                                    
-                                    </a>
-                                    <a class="link-agent px-2" href="#">
-                                     Reg. as Agent
-                                     
-                                        
-                                    </a> 
-                               
+                            <div class="text-white">
+                                <a class="link-bundle px-2" href="databundle.php">
+                                    Buy Now
+
+                                </a>
+                                <a class="link-agent px-2" href="#">
+                                    Reg. as Agent
+                                </a>
                             </div>
-
-
-
-
                         </div>
                     </div>
-                    <div class="col-6  d-flex justify-content-start align-content-center h-100"> 
-                        <img class="fourty" src="assets/images/bigsale.png" >
-
+                    <div class="col-6  d-flex justify-content-start align-content-center h-100">
+                        <img class="fourty" src="assets/images/bigsale.png">
                     </div>
-
-
-
                 </div>
 
 

@@ -9,19 +9,17 @@ $api = mysqli_fetch_assoc($secretApi);
 <div>
     <div class="container">
         <marquee behavior="scroll" direction="left" class="marquee">
-            <h4 class="marquee-text"><span class="text-">IMPORTANT NOTICE :</span> 
+            <h5 class="marquee-text"><span class="text-">IMPORTANT NOTICE :</span>
 
-Our data request service does not support the followin
+                Our data request service does not support the following:
 
-Merchant SIM,
-EVD SIM,
-Turbonet SIMS,
-Broadband SIMS,
-Blacklisted SIM,
-Other Network,
-Wrong Number,
-Please note that any data transferred to the above SIMs will be lost and cannot be reversed.
-data request service does not support the followin</h4>
+                Merchant SIM,
+                EVD SIM,
+                Turbonet SIM,
+                Broadband SIM,
+                Blacklisted SIM,
+                Please note that any data transferred to the above SIMs will be lost and cannot be reversed.
+            </h5>
         </marquee>
         <div class="row">
             <!-- Image Column (hidden on small screens) -->
@@ -31,7 +29,10 @@ data request service does not support the followin</h4>
             <!-- Form Column -->
             <div class="col-lg-6">
                 <h2 class="">Affordable Internet Bundles</h2>
-               <h5 class="important-notice"> Please make every effort to complete the payment to the Vodafone number <b>+233 20 057 4070</b> immediately after filling out the form. Use the provided reference in your payment to expedite your data request.</h5>
+                <h5 class="important-notice"> Pay to <span
+                        class="fs-2 fw-bold notice mx-1  p-1 rounded-sm text-white mx-1"> 0540182722 (Michael
+                        Cudjoe)</span> immediately after filling out the form. Use the Order ID you were provided when
+                    you submitted the order as reference in your momo transaction</h5>
 
                 <form class="" action="" method="POST" name="form">
                     <div class="mb-2">
@@ -80,10 +81,10 @@ data request service does not support the followin</h4>
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <div class="mb-0">
-                                <label for="amount_paid" class="form-label">Amount Paid (GHC):</label>
+                                <label for="amount_paid" class="form-label">Amount to be Paid (GHC):</label>
                                 <input type="text" id="amount_paid" name="amount_paid" class="form-control custom-input"
                                     readonly>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -99,22 +100,24 @@ data request service does not support the followin</h4>
                 <div class="row ">
                     <div class="col-md-12 m-auto">
                         <h2 class="section-header">Our <b class="text-dark">Packages</b></h2>
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2">
                             <!-- Carousel indicators -->
                             <ol class="carousel-indicators">
                                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                                 <li data-target="#myCarousel" data-slide-to="1"></li>
                                 <li data-target="#myCarousel" data-slide-to="2"></li>
                                 <li data-target="#myCarousel" data-slide-to="3"></li>
+                                <li data-target="#myCarousel" data-slide-to="4"></li>
+
                             </ol>
                             <!-- Wrapper for carousel items -->
                             <div class="carousel-inner">
-                            <div class="carousel-item ">
+                                <div class="carousel-item ">
                                     <div class="row">
                                         <div class="col-sm-3">
                                             <div class="thumb-wrapper">
 
-                                            <div class="thumb-content">
+                                                <div class="thumb-content">
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">1</span><span
                                                                 class="subscript">gig</span></div>
@@ -128,7 +131,7 @@ data request service does not support the followin</h4>
                                         </div>
                                         <div class="col-sm-3">
                                             <div class="thumb-wrapper">
-                                            <div class="thumb-content">
+                                                <div class="thumb-content">
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">2</span><span
                                                                 class="subscript">gig</span></div>
@@ -142,7 +145,7 @@ data request service does not support the followin</h4>
                                         </div>
                                         <div class="col-sm-3">
                                             <div class="thumb-wrapper">
-                                            <div class="thumb-content">
+                                                <div class="thumb-content">
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">3</span><span
                                                                 class="subscript">gig</span></div>
@@ -157,11 +160,11 @@ data request service does not support the followin</h4>
                                         <div class="col-sm-3">
                                             <div class="thumb-wrapper">
 
-                                            <div class="thumb-content">
+                                                <div class="thumb-content">
                                                     <div class="gigcard">
-                                                        <div class="package-size"><span class="size">14</span><span
+                                                        <div class="package-size"><span class="size">4</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 47</div>
+                                                        <div class="amount">GHC 16</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -176,11 +179,11 @@ data request service does not support the followin</h4>
                                         <div class="col-sm-3">
                                             <div class="thumb-wrapper">
 
-                                            <div class="thumb-content">
+                                                <div class="thumb-content">
                                                     <div class="gigcard">
-                                                        <div class="package-size"><span class="size">10</span><span
+                                                        <div class="package-size"><span class="size">5</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 35</div>
+                                                        <div class="amount">GHC 20</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -190,11 +193,11 @@ data request service does not support the followin</h4>
                                         </div>
                                         <div class="col-sm-3">
                                             <div class="thumb-wrapper">
-                                            <div class="thumb-content">
+                                                <div class="thumb-content">
                                                     <div class="gigcard">
-                                                        <div class="package-size"><span class="size">12</span><span
+                                                        <div class="package-size"><span class="size">6</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 40</div>
+                                                        <div class="amount">GHC 24</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -204,11 +207,11 @@ data request service does not support the followin</h4>
                                         </div>
                                         <div class="col-sm-3">
                                             <div class="thumb-wrapper">
-                                            <div class="thumb-content">
+                                                <div class="thumb-content">
                                                     <div class="gigcard">
-                                                        <div class="package-size"><span class="size">13</span><span
+                                                        <div class="package-size"><span class="size">7</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 43</div>
+                                                        <div class="amount">GHC 27</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -219,11 +222,11 @@ data request service does not support the followin</h4>
                                         <div class="col-sm-3">
                                             <div class="thumb-wrapper">
 
-                                            <div class="thumb-content">
+                                                <div class="thumb-content">
                                                     <div class="gigcard">
-                                                        <div class="package-size"><span class="size">14</span><span
+                                                        <div class="package-size"><span class="size">8</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 47</div>
+                                                        <div class="amount">GHC 30</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -237,7 +240,85 @@ data request service does not support the followin</h4>
                                     <div class="row">
                                         <div class="col-sm-3">
                                             <div class="thumb-wrapper">
-                                            <div class="thumb-content">
+                                                <div class="thumb-content">
+                                                    <div class="gigcard">
+                                                        <div class="package-size"><span class="size">9</span><span
+                                                                class="subscript">gig</span></div>
+                                                        <div class="amount">GHC 33</div>
+                                                    </div>
+                                                    <div>
+                                                        <a href="#" class="btn btn-primary">Buy Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="thumb-wrapper">
+
+                                                <div class="thumb-content">
+                                                    <div class="gigcard">
+                                                        <div class="package-size"><span class="size">10</span><span
+                                                                class="subscript">gig</span></div>
+                                                        <div class="amount">GHC 35</div>
+                                                    </div>
+                                                    <div>
+                                                        <a href="#" class="btn btn-primary">Buy Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="thumb-wrapper">
+
+                                                <div class="thumb-content">
+                                                    <div class="gigcard">
+                                                        <div class="package-size"><span class="size">12</span><span
+                                                                class="subscript">gig</span></div>
+                                                        <div class="amount">GHC 40</div>
+                                                    </div>
+                                                    <div>
+                                                        <a href="#" class="btn btn-primary">Buy Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="thumb-wrapper">
+
+                                                <div class="thumb-content">
+                                                    <div class="gigcard">
+                                                        <div class="package-size"><span class="size">13</span><span
+                                                                class="subscript">gig</span></div>
+                                                        <div class="amount">GHC 43</div>
+                                                    </div>
+                                                    <div>
+                                                        <a href="#" class="btn btn-primary">Buy Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <div class="thumb-wrapper">
+                                                <div class="thumb-content">
+                                                    <div class="gigcard">
+                                                        <div class="package-size"><span class="size">14</span><span
+                                                                class="subscript">gig</span></div>
+                                                        <div class="amount">GHC 47</div>
+                                                    </div>
+                                                    <div>
+                                                        <a href="#" class="btn btn-primary">Buy Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="thumb-wrapper">
+
+                                                <div class="thumb-content">
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">15</span><span
                                                                 class="subscript">gig</span></div>
@@ -252,7 +333,22 @@ data request service does not support the followin</h4>
                                         <div class="col-sm-3">
                                             <div class="thumb-wrapper">
 
-                                            <div class="thumb-content">
+                                                <div class="thumb-content">
+                                                    <div class="gigcard">
+                                                        <div class="package-size"><span class="size">16</span><span
+                                                                class="subscript">gig</span></div>
+                                                        <div class="amount">GHC 54</div>
+                                                    </div>
+                                                    <div>
+                                                        <a href="#" class="btn btn-primary">Buy Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="thumb-wrapper">
+
+                                                <div class="thumb-content">
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">18</span><span
                                                                 class="subscript">gig</span></div>
@@ -264,10 +360,13 @@ data request service does not support the followin</h4>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
                                         <div class="col-sm-3">
                                             <div class="thumb-wrapper">
-
-                                            <div class="thumb-content">
+                                                <div class="thumb-content">
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">20</span><span
                                                                 class="subscript">gig</span></div>
@@ -282,7 +381,7 @@ data request service does not support the followin</h4>
                                         <div class="col-sm-3">
                                             <div class="thumb-wrapper">
 
-                                            <div class="thumb-content">
+                                                <div class="thumb-content">
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">25</span><span
                                                                 class="subscript">gig</span></div>
@@ -294,43 +393,10 @@ data request service does not support the followin</h4>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                            <div class="thumb-wrapper">
-                                            <div class="thumb-content">
-                                                    <div class="gigcard">
-                                                        <div class="package-size"><span class="size">31</span><span
-                                                                class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 100</div>
-                                                    </div>
-                                                    <div>
-                                                        <a href="#" class="btn btn-primary">Buy Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="col-sm-3">
                                             <div class="thumb-wrapper">
 
-                                            <div class="thumb-content">
-                                                    <div class="gigcard">
-                                                        <div class="package-size"><span class="size">50</span><span
-                                                                class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 155</div>
-                                                    </div>
-                                                    <div>
-                                                        <a href="#" class="btn btn-primary">Buy Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="thumb-wrapper">
-
-                                            <div class="thumb-content">
+                                                <div class="thumb-content">
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">75</span><span
                                                                 class="subscript">gig</span></div>
@@ -386,61 +452,71 @@ data request service does not support the followin</h4>
 
     <!-- form submission -->
     <script>
-        const scriptURL = '<?= $api['url'] ?>';
-        const form = document.forms['form'];
+    const scriptURL = '<?= $api['url'] ?>';
+    const form = document.forms['form'];
 
-        function generateReference() {
-            const characters = '0123456789ABCDEFGHIJKLMNPQRSTUVWXYZ';
-            let reference = '';
-            for (let i = 0; i < 4; i++) {
-                reference += characters.charAt(Math.floor(Math.random() * characters.length));
-            }
-            return reference;
+    // Beep sound URL or Data URI
+    const beepSoundUrl = 'path/to/beep-sound.mp3'; // Replace with the actual URL or Data URI
+
+    function generateReference() {
+        const characters = '0123456789ABCDEFGHIJKLMNPQRSTUVWXYZ';
+        let reference = '';
+        for (let i = 0; i < 4; i++) {
+            reference += characters.charAt(Math.floor(Math.random() * characters.length));
         }
+        return reference;
+    }
 
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            const submitButton = form.querySelector('button[type="submit"]');
-            submitButton.disabled = true;
-            submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Submitting...';
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        const submitButton = form.querySelector('button[type="submit"]');
+        submitButton.disabled = true;
+        submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Submitting...';
 
-            // Generate random four-digit reference and set it in the hidden input field
-            const reference = generateReference();
-            document.getElementById('reference').value = reference;
+        // Generate random four-digit reference and set it in the hidden input field
+        const reference = generateReference();
+        document.getElementById('reference').value = reference;
 
-            const formData = new FormData(form);
+        const formData = new FormData(form);
 
-            fetch(scriptURL, {
-                method: 'POST',
-                body: formData
-            })
-                .then(response => {
-                    submitButton.disabled = false;
-                    submitButton.innerHTML = 'Submit';
-                    if (response.ok) {
-                        // Prompt user to copy the reference
-                        const copyText = document.createElement('textarea');
-                        copyText.value = reference;
-                        document.body.appendChild(copyText);
-                        copyText.select();
-                        document.execCommand('copy');
-                        document.body.removeChild(copyText);
-
-                        alert("Thank you! Order submitted successfully. Your Reference is: " + reference);
-                        form.reset();
-                        document.getElementById('package_mb').value = ''; // Clear the package_mb field
-                    } else {
-                        throw new Error('Network response was not ok');
-                    }
-                })
-                .catch(error => {
-                    submitButton.disabled = false;
-                    submitButton.innerHTML = 'Submit';
-                    console.error('Error!', error.message, error);
-                    alert("An error occurred while submitting the form. Please try again later.");
-                });
+        fetch(scriptURL, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            submitButton.disabled = false;
+            submitButton.innerHTML = 'Submit';
+            if (response.ok) {
+                // Prompt user to copy the reference
+                const copyText = document.createElement('textarea');
+                copyText.value = reference;
+                document.body.appendChild(copyText);
+                copyText.select();
+                document.execCommand('copy');
+                document.body.removeChild(copyText);
+                playBeep();
+                alert("Thank you! Your order has been successfully submitted. Your Order ID is:   " + reference + " .Complete the payment within 5 minutes to avoid expiration");
+                playBeep();
+                form.reset();
+                document.getElementById('package_mb').value = ''; // Clear the package_mb field
+            } else {
+                throw new Error('Network response was not ok');
+            }
+        })
+        .catch(error => {
+            submitButton.disabled = false;
+            submitButton.innerHTML = 'Submit';
+            console.error('Error!', error.message, error);
+            alert("An error occurred while submitting the form. Please try again later.");
         });
-    </script>
+    });
+
+    function playBeep() {
+        const beep = new Audio('assets/sound/beep-09.wav');
+        beep.play();
+    }
+</script>
+
 
 
     <script>
@@ -458,7 +534,7 @@ data request service does not support the followin</h4>
             });
         });
     </script>
-    
+
 
     <script>
         const bundlePackages = {
